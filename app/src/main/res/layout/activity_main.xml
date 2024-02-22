@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FEFEFE"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+<layout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/walton_hi_tech_industries_limited_logo" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/roboto"
-        android:padding="8dp"
-        android:text="@string/walton_name"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <ScrollView
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FEFEFE"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/walton_hi_tech_industries_limited_logo" />
 
         <TextView
-            android:id="@+id/textView2"
-            style="@style/generalTextStyle"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:fontFamily="@font/roboto"
-            android:text="@string/walton_bio" />
-    </ScrollView>
-</androidx.appcompat.widget.LinearLayoutCompat>
+            android:padding="8dp"
+            android:text="@string/walton_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/generalTextStyle"
+                android:fontFamily="@font/roboto"
+                android:text="@string/walton_bio" />
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
